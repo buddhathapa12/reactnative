@@ -63,12 +63,18 @@ function Name() {
 
 function App() {
   return (
-    <NavigationContainer linking={linking}>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Name" component={Name} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    // <NavigationContainer linking={linking}>
+    //   <Stack.Navigator>
+    //     <Stack.Screen name="Home" component={Home} />
+    //     <Stack.Screen name="Name" component={Name} />
+    //   </Stack.Navigator>
+    // </NavigationContainer>
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>
+      Hello, {JSON.stringify(linking)}
+    </Text>
+      </View>
+
   );
 }
 
